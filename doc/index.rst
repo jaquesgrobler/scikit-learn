@@ -6,39 +6,97 @@
 
     <!-- Classification -->
     <div class="span4 box">
-    <h2><a href="#">Classification</a></h2>
+    <h2 >
+
+:ref:`Classification <supervised-learning>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
-    <p class="box-tagline">Identifying to which set of categories a new observation belong to.</p>
+    <p class="box-tagline">Identifying to which set of categories a new observation belong
+    to.</p>
     <strong>Applications</strong>: Spam detection, image recognition.</br>
-    <strong>Algorithms</strong>: SVM, nearest neighbors, random forest, ...
+    <strong>Algorithms</strong>:
+    <div class="box-rst-links">
+
+:ref:`SVM<svm>`, :ref:`nearest neighbors<classification>`, :ref:`random forest<forest>`, ...
+
+.. raw:: html
+
+    </div>
     <span class="example-links">
-      <small class="float-right"><a href="#">Examples</a></small>
+    <small class="float-right">
+    
+:ref:`Examples<general_examples>`
+
+.. raw:: html
+
+    </small>
     </span>
     </blockquote>
     </div>
 
     <!-- Regression -->
     <div class="span4 box">
-    <h2><a href="#">Regression</a></h2>
+    <h2>
+
+:ref:`Regression <supervised-learning>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
     <p class="box-tagline">Predicting a continuous value for a new example.</p>
     <strong>Applications</strong>: drug response, stock prices.</br>
-    <strong>Algorithms</strong>: SVR, ridge regression, Lasso, ...
+    <strong>Algorithms</strong>:
+    <div class="box-rst-links">
+
+:ref:`SVR<svm>`, :ref:`ridge regression<ridge_regression>`, :ref:`Lasso<lasso>`, ...
+
+.. raw:: html
+
+    </div>
     <span class="example-links">
-      <small class="float-right"><a href="#">Examples</a></small>
+    <small class="float-right">
+    
+:ref:`Examples<general_examples>`
+
+.. raw:: html
+
+    </small>
     </span>
     </blockquote>
     </div>
 
     <!-- Clustering -->
     <div class="span4 box">
-    <h2><a href="#">Clustering</a></h2>
+    <h2>
+
+:ref:`Clustering<clustering>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
     <p class="box-tagline">Automatic grouping of similar objects into sets.</p>
     <strong>Applications</strong>: customer segmentation, grouping experiment outcomes</br>
-    <strong>Algorithms</strong>: k-Means, spectral clustering, mean-shift, ...
+    <strong>Algorithms</strong>:
+    <div class="box-rst-links">
+
+:ref:`k-Means<k_means>`, :ref:`spectral clustering<spectral_clustering>`, :ref:`mean-shift<mean_shift>`, ...
+
+.. raw:: html
+
+    </div>
     <span class="example-links">
-      <small class="float-right"><a href="#">Examples</a></small>
+      <small class="float-right">
+      
+:ref:`Examples<cluster_examples>`
+
+.. raw:: html
+
+      </small>
     </span>
     </blockquote>
     </div>
@@ -48,26 +106,64 @@
 
     <!-- Dimension reduction -->
     <div class="span4 box">
-    <h2><a href="#">Dimension reduction</a></h2>
+    <h2>
+
+:ref:`Dimensionality reduction<decompositions>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
     <p class="box-tagline">Reducing the number of random variables to consider.</p>
     <strong>Applications</strong>: visualization, increased efficiency</br>
-    <strong>Algorithms</strong>: PCA, Isomap, non-negative matrix factorization, ...</br>
+    <strong>Algorithms</strong>:
+    <div class="box-rst-links">
+
+:ref:`PCA<PCA>`, :ref:`Isomap<isomap>`, :ref:`non-negative matrix factorization<NMF>`, ...
+
+.. raw:: html
+
+    </div>
     <span class="example-links">
-      <small class="float-right"><a href="#">Examples</a></small>
+      <small class="float-right">
+
+:ref:`Examples<manifold_examples>`
+
+.. raw:: html
+
+      </small>
     </span>
     </blockquote>
     </div>
 
     <!-- Model selection -->
     <div class="span4 box">
-    <h2><a href="#">Model selection</a></h2>
+    <h2>
+
+:ref:`Model Selection<model_selection>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
     <p class="box-tagline">Comparing, validating and choosing parameters and models.</p>
     <strong>Goal</strong>: Improved accuracy via parameter tuning</br>
-    <strong>Relevant modules</strong>: grid search, cross validation, evaluation metrics
+    <strong>Relevant modules</strong>:
+    <div class="box-rst-links">
+    
+:ref:`grid search<grid_search>`, :ref:`cross validation<cross_validation>`, :ref:`evaluation metrics<model_evaluation>`
+
+.. raw:: html
+    
+    </div>
     <span class="example-links">
-      <small class="float-right"><a href="#">Examples</a></small>
+    <small class="float-right">
+    
+:ref:`Examples<general_examples>`
+
+.. raw:: html
+
+    </small>
     </span>
     </blockquote>
     </div>
@@ -75,12 +171,33 @@
 
     <!-- Preprocessing -->
     <div class="span4 box">
-    <h2 ><a href="#">Preprocessing</a></h2>
+    <h2>
+    
+:ref:`Preprocessing<preprocessing>`
+
+.. raw:: html
+
+    </h2>
     <blockquote>
     <p class="box-tagline">Creating and normalizing features.</p>
     <strong>Application</strong>: transforming input data such as text for use with machine learning algorithms.</br>
-    <strong>Relevant modules</strong>: preprocessing, feature extraction</br>
-    <small class="float-right"><a href="#">Examples</a></small>
+    <strong>Relevant modules</strong>:
+    <div class="box-rst-links">
+
+:ref:`preprocessing<preprocessing>`, :ref:`feature extraction<feature_extraction>`
+
+.. raw:: html
+
+    </div>
+    <span class="example-links">
+    <small class="float-right">
+    
+:ref:`Examples<general_examples>`
+
+.. raw:: html
+
+    </small>
+    </span>
     </blockquote>
     </div>
     <!-- row -->
