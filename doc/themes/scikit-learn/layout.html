@@ -14,6 +14,8 @@
 #}
 {% extends "basic/layout.html" %}
 
+<script src="{{ pathto('_static/js/jquery.js', 1)}}"></script>
+
 {% if theme_collapsiblesidebar|tobool %}
 {% set script_files = script_files + ['_static/sidebar.js'] %}
 {% endif %}
@@ -25,7 +27,6 @@
 <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" media`="screen" />
 <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap-responsive.css', 1) }}"/>
 
-<script src="{{ pathto('_static/js/jquery.js', 1)}}"></script>
 <script src="{{ pathto('_static/js/bootstrap.min.js', 1)}}"></script>
 
 {%- if pagename == 'index' or pagename == 'documentation' %}
@@ -179,9 +180,11 @@ index -->
         </div>
     {%- endif %}
     </div>
+    {%- if pagename != "install" %} 
     <p style="text-align: center; background-color: #FFE4E4">This documentation is
     for {{project}} <strong>version {{ release|e }}</strong>
     &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
+    {%- endif %}
 
     <h3>{{ _('This page') }}</h3>
         {{ toc }}
