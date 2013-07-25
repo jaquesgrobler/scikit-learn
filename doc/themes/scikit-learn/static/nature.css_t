@@ -261,7 +261,7 @@ div.sphinxsidebarwrapper {
 {% if theme_collapsiblesidebar|tobool %}
 /* for collapsible sidebar */
 div#sidebarbutton {
-    background-color: #F0F0F0;
+    background-color: #F6F6F6;
 }
 {% endif %}
 
@@ -803,3 +803,7 @@ div.box-links p {
     display: inline;
 }
 
+div.row-fluid div.box h2 {
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
