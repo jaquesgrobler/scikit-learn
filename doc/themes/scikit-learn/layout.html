@@ -14,12 +14,6 @@
 #}
 {% extends "basic/layout.html" %}
 
-<script src="{{ pathto('_static/js/jquery.js', 1)}}"></script>
-
-{% if theme_collapsiblesidebar|tobool %}
-{% set script_files = script_files + ['_static/sidebar.js'] %}
-{% endif %}
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" media`="screen" />
@@ -235,6 +229,9 @@ index -->
     {%- endfor %}
     {% endif %}
      </div>
+     {% if theme_collapsiblesidebar|tobool %}
+         <script type="text/javascript" src="_static/sidebar.js"></script>
+     {% endif %}
      <script type="text/javascript">
        $("div.buttonNext, div.buttonPrevious").hover(
            function () {
