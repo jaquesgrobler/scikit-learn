@@ -59,11 +59,12 @@ $(function() {
 
   function collapse_sidebar() {
     sidebarwrapper.hide();
-    sidebar.css('width', ssb_width_collapsed);
+    sidebar.width(ssb_width_collapsed);
     bodywrapper.css('margin-left', bw_margin_collapsed);
     sidebarbutton.css({
         'margin-left': '0',
-        'height': bodywrapper.height()
+        'height': bodywrapper.height(),
+	'left': '8px'
     });
     sidebarbutton.find('span').text('»');
     sidebarbutton.attr('title', _('Expand sidebar'));
@@ -72,11 +73,12 @@ $(function() {
 
   function expand_sidebar() {
     bodywrapper.css('margin-left', bw_margin_expanded);
-    sidebar.css('width', ssb_width_expanded);
+    sidebar.width(ssb_width_expanded);
     sidebarwrapper.show();
     sidebarbutton.css({
         'margin-left': ssb_width_expanded-13,
-        'height': bodywrapper.height()
+        'height': bodywrapper.height(),
+	'left': '0'
     });
     sidebarbutton.find('span').text('«');
     sidebarbutton.attr('title', _('Collapse sidebar'));
@@ -111,6 +113,7 @@ $(function() {
     sidebarbutton.css({
         'border-left': '1px solid ' + dark_color,
 	'border-top-left-radius' : '15px',
+	'border-bottom-left-radius' : '15px',
         'font-size': '1.2em',
         'cursor': 'pointer',
         'height': bodywrapper.height(),
@@ -123,7 +126,7 @@ $(function() {
           $(this).css('background-color', '#D0D0D0');
       },
       function () {
-          $(this).css('background-color', '#F0F0F0');
+          $(this).css('background-color', '#F6F6F6');
       }
     );
   }
@@ -147,5 +150,7 @@ $(function() {
 
   add_sidebar_button();
   var sidebarbutton = $('#sidebarbutton');
-  set_position_from_cookie();
+  // set_position_from_cookie();
+  // Uncomment the above to have cookies remember sidebar position
+  // Causes problems on pages without sidebar like index
 });
